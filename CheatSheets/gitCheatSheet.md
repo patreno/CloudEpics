@@ -60,6 +60,27 @@ Delete the most recent commit, **destroying the work** you've done
 
 Source: [Stackoverflow](https://stackoverflow.com/questions/3197413/how-do-i-delete-unpushed-git-commits)
 
+
+### Remove whole git history
+
+>[!IMPORTANT]
+>These steps are final and will remove the full commit history for a >repo!!!!
+
+Create a new orphan temporary branch:\
+`git checkout --orphan tempbranch`
+
+Add all the files to the new temp branch:\
+`git commit -m 'Initial commit'`
+
+Delete the _main_ branch. The main will be gone!\
+ `git branch -D main`
+
+Rename/move the temp branch to _main_ :\
+`git branch -am main`
+
+Force push all these changes to the remote repo:\
+`git push -f origin main`
+
 ## Merging
 
 ### Merging without commit 'and' without 'fast forward'

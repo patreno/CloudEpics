@@ -11,6 +11,16 @@ title: My Docker Cheat Sheet
 
 Docker run reference see: [Docker run reference](https://docs.docker.com/engine/reference/run/)
 
+### Non-interactive mode
+
+#### Run New Container
+
+`docker run <image name>` 
+
+#### Run Existing Container
+
+`docker start <container id>`
+
 ### Run in Interactive Mode
 
 #### Run New Container
@@ -18,6 +28,8 @@ Docker run reference see: [Docker run reference](https://docs.docker.com/engine/
 `docker run -it <image name>` 
 
 #### Run Existing Container
+
+`docker start -ai <container id>`
 
 ## Filter Containers
 

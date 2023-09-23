@@ -27,7 +27,11 @@ Docker run reference see: [Docker run reference](https://docs.docker.com/engine/
 
 ## Cleanup Containers
 
-### Remove All Containers from a Specific Image
+### Remove all containers
+
+ `docker rm $(docker ps -aq)`
+
+### Remove all containers from a specific image
 
 `docker rm $(docker ps -aq --filter 'ancestor=<image name>' --filter 'status=exited')`
 

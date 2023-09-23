@@ -5,8 +5,6 @@ title: My Docker Cheat Sheet
 * TOC
 {:toc}
 
-# Containers
-
 ## Run Containers
 
 Docker run reference see: [Docker run reference](https://docs.docker.com/engine/reference/run/)

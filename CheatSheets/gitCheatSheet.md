@@ -86,7 +86,7 @@ Force push all these changes to the remote repo:\
 These steps explain how to reset a local branch to the version of the remote.
 
 1. Go to the branch that needs to be reset.\
-   ´git checkout <the_branch>`
+   `git checkout <the_branch>`
 2. Fetch the updates from the remote repository.\
    `git fetch origin`
 3. Reset the local branch. This resets the local branch to match exactly the remote branch. It will remove all local commits that were not pushed yet to the remote.\

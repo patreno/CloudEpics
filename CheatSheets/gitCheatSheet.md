@@ -81,6 +81,18 @@ Rename/move the temp branch to _main_ :\
 Force push all these changes to the remote repo:\
 `git push -f origin main`
 
+### Reset a local branch
+
+These steps explain how to reset a local branch to the version of the remote.
+
+1. Go to the branch that needs to be reset.
+   ´git checkout <the_branch>´
+2. Fetch the updates from the remote repository.
+   `git fetch origin`
+3. Reset the local branch. This resets the local branch to match exactly the remote branch. It will remove all local commits that were not pushed yet to the remote.
+   `git reset --hard origin/<the_branch>`
+   Note: don't forget to prefix the branch name with the name of the remote repository which is mostly 'origin'.
+   
 ## Merging
 
 ### Merging without commit 'and' without 'fast forward'

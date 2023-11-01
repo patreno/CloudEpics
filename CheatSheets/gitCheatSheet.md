@@ -187,3 +187,21 @@ _Note: Be careful with git branch -d, the branch will deleted and there is no wa
 ### Push all tags to remote
 
 `git push --tags`
+
+# Show differences
+
+## Show the commits that are not yet pushed to the remote repository
+
+Ensure to be on the branch you want to inspect. In this example it is <the_branch>.
+
+`git log origin/<the_branch>..HEAD`
+
+Note: don't forget to prefix the branch name with the name of the remote repository which is mostly 'origin'.
+
+## Show the differences between a the local and the remote version
+
+Ensure to be on the branch you want to inspect. In this example it is <the_branch>.
+
+`git diff origin/<the_branch>..HEAD`
+
+Note: don't forget to prefix the branch name with the name of the remote repository which is mostly 'origin'.
